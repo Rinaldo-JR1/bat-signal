@@ -13,12 +13,12 @@ export function BatForm({ setIsForm }: ScreenProps) {
     const items: BatFormInputProps[] = [
         { label: 'Nome' },
         { label: 'Cidade' },
-        { label: 'Quais vilões' },
-        { label: 'O que estão fazendo' },
+        { label: 'Quais vilões', numberOfLines: 4 },
+        { label: 'O que estão fazendo', numberOfLines: 4 },
     ]
     const buildForm = () => {
         return items.map((item, index) => {
-            return <BatFormInput key={index} label={item.label} />
+            return <BatFormInput key={index} numberOfLines={item.numberOfLines} label={item.label} />
         })
     }
     const finishForm = () => {

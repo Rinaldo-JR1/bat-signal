@@ -5,14 +5,25 @@ import { BatFormInputProps } from '../../interfaces/BatFormInputProps/BatFormInp
 
 
 
-export function BatFormInput({ label }: BatFormInputProps) {
+export function BatFormInput({ label, numberOfLines }: BatFormInputProps) {
   return (
     <View style={styles.container}>
       <View >
         <Text style={styles.label}>{label}:</Text>
       </View>
       <View>
-        <TextInput placeholder={label} style={styles.TextInput} />
+        <TextInput
+          multiline={numberOfLines ? true : false}
+          numberOfLines={numberOfLines}
+          placeholder={label}
+
+          style={[styles.TextInputText, numberOfLines ?
+            {
+              height: 400 / numberOfLines,
+              textAlignVertical: 'top'
+            }
+            : undefined]}
+        />
       </View>
     </View>
   );

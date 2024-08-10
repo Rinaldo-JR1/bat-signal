@@ -12,11 +12,9 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         marginBottom: 5,
     },
-    TextInput: {
+    TextInputText: {
         padding: 10,
         height: 45,
-        justifyContent: "center",
-        alignItems: "center",
         borderColor: "black",
         borderWidth: 2,
     }

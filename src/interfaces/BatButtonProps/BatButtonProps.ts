@@ -1,3 +1,4 @@
 export interface BatButtonProps {
-    onPress: () => void;
+  onPress: () => void;
+  text: string;
 }

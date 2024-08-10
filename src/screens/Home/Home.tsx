@@ -12,8 +12,10 @@ export function Home({ setIsForm }: ScreenProps) {
   }
   return (
     <View style={styles.container}>
-      <BatLogo />
-      <BatButton onPress={emitSignal} />
+      <View style={{ paddingTop: 90, paddingBottom: 70 }}>
+        <BatLogo height={300} />
+      </View>
+      <BatButton text='Pedir Ajuda' onPress={emitSignal} />
     </View>
   );
 }

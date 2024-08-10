@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    container: {},
     button: {
+        marginTop: 20,
         backgroundColor: `#333333`,
         color: `white`,
         height: 50,
